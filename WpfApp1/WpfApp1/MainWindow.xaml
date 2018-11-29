@@ -1,0 +1,31 @@
+﻿<Controls:MetroWindow x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:Controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Controls:MetroWindow.Flyouts>
+        <Controls:FlyoutsControl>
+        <Controls:Flyout HorizontalContentAlignment="Stretch"
+                             AnimateOpacity="True"
+                             CloseButtonIsCancel="True"
+                             Header="New Goodness"
+                             Position="Right">
+            <StackPanel Margin="10" Orientation="Vertical">
+                <Button Margin="2"
+                            Content="create"
+                            />
+                <Button Margin="2"
+                            Content="cancel"
+                             />
+            </StackPanel>
+        </Controls:Flyout>
+        </Controls:FlyoutsControl>
+    </Controls:MetroWindow.Flyouts>
+    <Grid>
+        <Button></Button>
+    </Grid>
+</Controls:MetroWindow>
